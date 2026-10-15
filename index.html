@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Foliage Cafe | Independent café in Clifton Village, Bristol</title>
+  <meta name="description" content="Foliage Cafe is an independent café on Regent Street in Clifton Village, Bristol. Breakfast, brunch, specialty coffee and grab-and-go, open daily from 8am.">
+  <meta name="theme-color" content="#f3efe6">
+
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Foliage Cafe, Clifton Village">
+  <meta property="og:description" content="Independent café on Regent Street, Bristol. Breakfast, brunch and coffee, open daily.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:locale" content="en_GB">
+
+  <link rel="icon" type="image/png" href="/foliage-cafe/images/favicon.png">
+  <link rel="apple-touch-icon" href="/foliage-cafe/images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/foliage-cafe/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Foliage Cafe",
+    "image": "images/storefront-day.jpg",
+    "email": "Foliagecafeclifton@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "17 Regent Street",
+      "addressLocality": "Bristol",
+      "postalCode": "BS8 4HW",
+      "addressCountry": "GB"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.453903, "longitude": -2.618151 },
+    "servesCuisine": ["Cafe", "Breakfast", "Brunch"],
+    "priceRange": "££",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "16:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "08:00", "closes": "17:00" }
+    ],
+    "sameAs": ["https://www.instagram.com/foliagecafeclifton/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Seasonal notice: text is set in js/main.js (NOTICE). Hidden when empty. -->
+  <div class="notice" id="notice" hidden>
+    <p class="notice__text" id="notice-text"></p>
+    <button class="notice__close" type="button" aria-label="Dismiss notice">&times;</button>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="Foliage Cafe home">
+        <img src="/foliage-cafe/images/logo-ink.png" alt="Foliage Cafe" width="96" height="70">
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#counter">Grab &amp; go</a></li>
+          <li><a href="#visit">Hours &amp; location</a></li>
+        </ul>
+        <a class="btn btn--solid nav__cta" href="#visit">Find us</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Clifton Village, Bristol &middot; Est. 2019</p>
+          <h1 class="hero__title">Breakfast, brunch and good coffee on Regent Street.</h1>
+          <p class="hero__lead">An independent café full of plants, serving fresh plates from half eight and coffee until close, seven days a week.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#menu">See the menu</a>
+            <a class="btn btn--line" href="#visit">Opening hours</a>
+          </div>
+
+          <p class="status" id="status" aria-live="polite">
+            <span class="status__dot"></span>
+            <span class="status__text">17 Regent Street, BS8 4HW</span>
+          </p>
+        </div>
+
+        <figure class="hero__media">
+          <img src="/foliage-cafe/images/storefront-day.jpg"
+               srcset="/foliage-cafe/images/storefront-day-sm.jpg 720w, /foliage-cafe/images/storefront-day.jpg 1400w"
+               sizes="(min-width: 900px) 46vw, 100vw"
+               alt="The Foliage Cafe shopfront on Regent Street, with a yellow door and yellow stools outside"
+               width="1400" height="1867" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <!-- QUICK FACTS -->
+    <section class="facts" aria-label="At a glance">
+      <div class="container facts__grid">
+        <div class="fact">
+          <h2 class="fact__label">Kitchen</h2>
+          <p class="fact__value" id="kitchen-today">08:30 &ndash; 15:00 weekdays<br>08:30 &ndash; 16:00 weekends</p>
+        </div>
+        <div class="fact">
+          <h2 class="fact__label">Dietary</h2>
+          <p class="fact__value">Most dishes can be made dairy or gluten free. Vegan options daily.</p>
+        </div>
+        <div class="fact">
+          <h2 class="fact__label">Where</h2>
+          <p class="fact__value">17 Regent Street, Clifton Village, two minutes from the Arcade.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu section" id="menu">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Served daily</p>
+          <h2 class="section-title">The Foliage Menu</h2>
+          <p class="section-intro">Food from 08:30 until 15:00 on weekdays and 16:00 at weekends. Ask at the counter for the soup of the day.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Menu sections">
+          <button class="tab is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="toast">On toast &amp; plates</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="sandwich">Sandwiches</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="sweet">Sweet</button>
+        </div>
+
+        <div class="menu-card">
+          <ul class="menu-list" id="menu-list">
+            <li class="dish" data-cat="toast">
+              <div class="dish__row"><h3 class="dish__name">Salmon &amp; cream cheese</h3><span class="dish__price">12</span></div>
+              <p class="dish__desc">Smoked salmon, whipped cream cheese, pickled red onions, capers and dill on granary bloomer</p>
+            </li>
+            <li class="dish" data-cat="sandwich">
+              <div class="dish__row"><h3 class="dish__name">Croque Foliage</h3><span class="dish__price">12</span></div>
+              <p class="dish__desc">Grilled cheesy granary bloomer with ham, béchamel sauce, spinach and a poached egg</p>
+            </li>
+            <li class="dish" data-cat="toast">
+              <div class="dish__row"><h3 class="dish__name">Avocado &amp; feta</h3><span class="dish__price">11</span></div>
+              <p class="dish__desc">Smashed avocado with house beetroot pesto on toasted granary bloomer, crumbed feta and pickled red onions</p>
+            </li>
+            <li class="dish" data-cat="toast">
+              <div class="dish__row"><h3 class="dish__name">Focaccia burrata</h3><span class="dish__price">10.5</span></div>
+              <p class="dish__desc">Burrata mozzarella served with house basil pesto, Parma ham, heritage tomatoes, mixed leaf salad and toasted focaccia</p>
+            </li>
+            <li class="dish" data-cat="toast">
+              <div class="dish__row"><h3 class="dish__name">Garden pea hummus on toast</h3><span class="dish__price">10.5</span></div>
+              <p class="dish__desc">Toasted bloomer with pea hummus, baby spinach, red pepper, caper and lemon salsa, red onions and soya sauce toasted seeds</p>
+            </li>
+            <li class="dish" data-cat="sweet">
+              <div class="dish__row"><h3 class="dish__name">Overnight oats</h3><span class="dish__price">7.5</span></div>
+              <p class="dish__desc">Oats soaked overnight in coconut milk, topped with strawberries, blueberries, banana, peanut butter, coconut, chia seeds, pumpkin seeds and maple syrup</p>
+            </li>
+            <li class="dish" data-cat="toast">
+              <div class="dish__row"><h3 class="dish__name">Foliage mezze</h3><span class="dish__price">9.5</span></div>
+              <p class="dish__desc">Quinoa and chickpea salad, hummus, house pestos, marinaded tomatoes, fermented chilli and garlic, avocado and toasted focaccia</p>
+            </li>
+            <li class="dish" data-cat="sweet">
+              <div class="dish__row"><h3 class="dish__name">Pancakes</h3><span class="dish__price">8.5</span></div>
+              <p class="dish__desc">House pancakes covered with seasonal compote, coconut yogurt and fresh fruit</p>
+            </li>
+            <li class="dish" data-cat="toast">
+              <div class="dish__row"><h3 class="dish__name">Poached eggs on toast</h3><span class="dish__price">7.5</span></div>
+              <p class="dish__desc">Poached eggs on buttered granary bloomer, green garnish</p>
+            </li>
+            <li class="dish" data-cat="toast">
+              <div class="dish__row"><h3 class="dish__name">Soup of the day</h3><span class="dish__price">6.5</span></div>
+              <p class="dish__desc">Please ask at the counter</p>
+            </li>
+            <li class="dish" data-cat="sandwich">
+              <div class="dish__row"><h3 class="dish__name">Bacon &amp; avocado sandwich</h3><span class="dish__price">9.5</span></div>
+              <p class="dish__desc">Toasted granary bloomer with avocado, sliced tomato, bacon and spinach</p>
+            </li>
+          </ul>
+
+          <div class="extras">
+            <h3 class="extras__title">Extras</h3>
+            <ul class="extras__list">
+              <li><span>GF bread</span><span>0.5</span></li>
+              <li><span>Bacon</span><span>2</span></li>
+              <li><span>Poached eggs</span><span>2</span></li>
+              <li><span>Parma ham</span><span>2.5</span></li>
+              <li><span>Avocado</span><span>2.5</span></li>
+              <li><span>Halloumi</span><span>2.5</span></li>
+              <li><span>Salmon</span><span>2.5</span></li>
+              <li><span>Burrata mozzarella</span><span>2.5</span></li>
+            </ul>
+            <p class="extras__note">Dishes can be made dairy or gluten free. Please tell us about any allergies when you order.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOD GALLERY -->
+    <section class="gallery" aria-label="From the kitchen">
+      <div class="container gallery__grid">
+        <figure class="gallery__item gallery__item--tall">
+          <img src="/foliage-cafe/images/brunch-table-sm.jpg" srcset="/foliage-cafe/images/brunch-table-sm.jpg 720w, /foliage-cafe/images/brunch-table.jpg 1400w" sizes="(min-width: 900px) 40vw, 100vw" alt="Avocado and feta on toast, the Foliage mezze and pancakes on a wooden table" loading="lazy" width="720" height="960">
+          <figcaption>Avocado &amp; feta, mezze and pancakes</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="/foliage-cafe/images/pancakes-sm.jpg" srcset="/foliage-cafe/images/pancakes-sm.jpg 720w, /foliage-cafe/images/pancakes.jpg 1400w" sizes="(min-width: 900px) 30vw, 100vw" alt="Stack of house pancakes with berry compote, banana, mango and coconut yogurt" loading="lazy" width="720" height="720">
+          <figcaption>House pancakes with seasonal compote</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="/foliage-cafe/images/coffee-pair-sm.jpg" srcset="/foliage-cafe/images/coffee-pair-sm.jpg 720w, /foliage-cafe/images/coffee-pair.jpg 1400w" sizes="(min-width: 900px) 30vw, 100vw" alt="Two flat whites with latte art beside a pastry on the window bar" loading="lazy" width="720" height="960">
+          <figcaption>Flat whites at the window bar</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__media">
+          <img class="about__img about__img--main" src="/foliage-cafe/images/coffee-served-sm.jpg" srcset="/foliage-cafe/images/coffee-served-sm.jpg 720w, /foliage-cafe/images/coffee-served.jpg 1400w" sizes="(min-width: 900px) 34vw, 90vw" alt="A barista serving a latte on the window bar" loading="lazy" width="720" height="960">
+          <img class="about__img about__img--inset" src="/foliage-cafe/images/window-logo-sm.jpg" alt="The Foliage Cafe logo painted in gold on the front window" loading="lazy" width="720" height="960">
+        </div>
+
+        <div class="about__copy">
+          <p class="eyebrow">Proudly independent</p>
+          <h2 class="section-title">A small café in the middle of Clifton Village.</h2>
+          <p>Foliage opened on Regent Street in 2019. Inside you'll find hanging plants, warm lights, a long window bar for watching the street, and a counter stacked with pastries, cakes and sandwiches.</p>
+          <p>The kitchen keeps things simple: good bread, fresh toppings and plates that work for a quick breakfast or a slow weekend brunch. Coffee comes in our blue and yellow cups, with alternative milks and Chemex on the board.</p>
+          <p>Sit in, take away, or grab one of the yellow stools outside when the sun's out.</p>
+          <a class="text-link" href="#visit">Plan your visit</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTER / GRAB & GO -->
+    <section class="counter section" id="counter">
+      <div class="container counter__grid">
+        <div class="counter__copy">
+          <p class="eyebrow">In a hurry?</p>
+          <h2 class="section-title">Grab &amp; go from the counter.</h2>
+          <p>Sandwiches, cakes and pastries on the counter, plus a fridge of juices, sodas, kombucha and still or sparkling water.</p>
+
+          <div class="deal">
+            <p class="deal__label">Meal deal</p>
+            <p class="deal__body">Any sandwich and a soft drink</p>
+            <p class="deal__price">£6.99</p>
+          </div>
+
+          <ul class="ticks">
+            <li>Espresso drinks and Chemex</li>
+            <li>Alternative milks available</li>
+            <li>Sit in or take away</li>
+          </ul>
+        </div>
+        <figure class="counter__media">
+          <img src="/foliage-cafe/images/counter-sm.jpg" srcset="/foliage-cafe/images/counter-sm.jpg 720w, /foliage-cafe/images/counter.jpg 1400w" sizes="(min-width: 900px) 52vw, 100vw" alt="The counter with pastries in a glass cabinet and a fridge of sandwiches and drinks" loading="lazy" width="720" height="540">
+        </figure>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="visit section" id="visit">
+      <div class="container visit__grid">
+        <div class="visit__info">
+          <p class="eyebrow">Hours &amp; location</p>
+          <h2 class="section-title">Come and see us.</h2>
+
+          <address class="visit__address">
+            Foliage Cafe<br>
+            17 Regent Street<br>
+            Clifton Village, Bristol<br>
+            BS8 4HW
+          </address>
+
+          <table class="hours" aria-label="Opening hours">
+            <tbody id="hours-body">
+              <tr data-day="1"><th scope="row">Monday</th><td>08:00 &ndash; 16:00</td></tr>
+              <tr data-day="2"><th scope="row">Tuesday</th><td>08:00 &ndash; 16:00</td></tr>
+              <tr data-day="3"><th scope="row">Wednesday</th><td>08:00 &ndash; 16:00</td></tr>
+              <tr data-day="4"><th scope="row">Thursday</th><td>08:00 &ndash; 16:00</td></tr>
+              <tr data-day="5"><th scope="row">Friday</th><td>08:00 &ndash; 16:00</td></tr>
+              <tr data-day="6"><th scope="row">Saturday</th><td>08:00 &ndash; 17:00</td></tr>
+              <tr data-day="0"><th scope="row">Sunday</th><td>08:00 &ndash; 17:00</td></tr>
+            </tbody>
+          </table>
+          <p class="visit__small">Food is served until 15:00 on weekdays and 16:00 at weekends.</p>
+
+          <div class="visit__actions">
+            <a class="btn btn--solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=Foliage+Cafe,+17+Regent+Street,+Bristol+BS8+4HW" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn--line" href="mailto:Foliagecafeclifton@gmail.com">Email us</a>
+          </div>
+        </div>
+
+        <div class="visit__map">
+          <iframe
+            title="Map showing Foliage Cafe, 17 Regent Street, Bristol"
+            src="https://maps.google.com/maps?q=Foliage%20Cafe%2C%2017%20Regent%20Street%2C%20Bristol%20BS8%204HW&amp;z=16&amp;output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- NIGHT BAND -->
+    <section class="band" aria-label="Foliage Cafe at dusk">
+      <img src="/foliage-cafe/images/storefront-night-sm.jpg" srcset="/foliage-cafe/images/storefront-night-sm.jpg 720w, /foliage-cafe/images/storefront-night.jpg 1400w" sizes="100vw" alt="" loading="lazy" width="1400" height="1400">
+      <div class="band__inner container">
+        <p class="band__text">Look for the yellow door.</p>
+        <a class="btn btn--light" href="https://www.instagram.com/foliagecafeclifton/" target="_blank" rel="noopener">@foliagecafeclifton</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="/foliage-cafe/images/logo-white.png" alt="Foliage Cafe" width="150" height="110" loading="lazy">
+        <p>Independent café in Clifton Village since 2019.</p>
+      </div>
+      <div>
+        <h2 class="site-footer__h">Visit</h2>
+        <p>17 Regent Street<br>Bristol BS8 4HW</p>
+      </div>
+      <div>
+        <h2 class="site-footer__h">Open</h2>
+        <p>Mon &ndash; Fri 08:00 &ndash; 16:00<br>Sat &amp; Sun 08:00 &ndash; 17:00</p>
+      </div>
+      <div>
+        <h2 class="site-footer__h">Contact</h2>
+        <p><a href="mailto:Foliagecafeclifton@gmail.com">Foliagecafeclifton@gmail.com</a><br>
+           <a href="https://www.instagram.com/foliagecafeclifton/" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+    </div>
+    <div class="container site-footer__base">
+      <p>&copy; <span id="year">2026</span> Foliage Cafe</p>
+      <p><a href="mailto:shahshubham130@gmail.com" target="_blank" rel="noopener">Site by Shubham Shah</a></p>
+    </div>
+  </footer>
+
+  <script src="/foliage-cafe/js/main.js" defer></script>
+</body>
+</html>
